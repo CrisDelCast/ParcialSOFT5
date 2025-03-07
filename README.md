@@ -8,7 +8,8 @@
 - **Fecha:7/03/2025**
 
 ## Resumen de la Solución
-Se desarrolló la contenerización de una aplicacion (Node.js)utilizando Docker para su ejecucion. La aplicación incluye un endpoint principal (/) que muestra un mensaje de bienvenida y un endpoint de salud (/health) para verificar el estado del servicio. Se creó un Dockerfile y un script de automatización deploy.sh para facilitar el despliegue.
+
+En esta práctica, se realizó la contenerización de una aplicación Node.js utilizando Docker. Se creó un Dockerfile para construir la imagen del contenedor y un script de automatización en Bash (deploy.sh) para gestionar el proceso de construcción, eliminación de contenedores antiguos y despliegue de la aplicación. Finalmente, se verificó que la aplicación estuviera ejecutándose correctamente dentro del contenedor.
 
 ## Dockerfile
 Se utilizó una imagen base ligera de Node.js (Alpine) para optimizar el tamaño del contenedor. Se configuró el WORKDIR, se copiaron los archivos necesarios y se instalaron las dependencias en modo producción. Finalmente, se expuso el puerto 8080 y se definió el comando de ejecución.
